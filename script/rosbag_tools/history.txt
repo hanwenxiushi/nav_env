@@ -1,0 +1,11 @@
+current date is: 1724397601
+modify date is: 1724395712
+file: /home/guard/iros_ws/ros_bag/2024-08-23-14-21-37_0.bag.active modify Date: 1724395712 + Exist time: 1889 + Delete:no
+modify date is: 1724393554
+file: /home/guard/iros_ws/ros_bag/2024-08-23-14-03-13_0.bag.active modify Date: 1724393554 + Exist time: 4047 + Delete:no
+modify date is: 1724394076
+file: /home/guard/iros_ws/ros_bag/2024-08-23-14-12-59_0.bag.active modify Date: 1724394076 + Exist time: 3525 + Delete:no
+modify date is: 1724397600
+file: /home/guard/iros_ws/ros_bag/2024-08-23-15-08-51_0.bag.active modify Date: 1724397600 + Exist time: 1 + Delete:no
+modify date is: 1724392962
+file: /home/guard/iros_ws/ros_bag/2024-08-23-11-46-01_0.bag.active modify Date: 1724392962 + Exist time: 4639 + Delete:no

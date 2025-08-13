@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export ROBOT_NAVI_CODE="$(dirname "$PWD")/nav_code"
+export ROBOT_ENV_PATH="$(dirname "$PWD")/nav_env"
+export ROBOT_MAP_PATH="$(dirname "$PWD")/resource/map"
+export HOST_SYSTEM_PROCESSOR="x86_64"
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/protobuf/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/opencv/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/boost/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/ceres/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/libzmq/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/zmqpp/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/BehaviorTree/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/pcl/lib

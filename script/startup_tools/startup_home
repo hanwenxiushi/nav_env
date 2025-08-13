@@ -1,0 +1,6 @@
+#!/bin/bash
+
+gnome-terminal -x bash -c "cd ~/iros_ws;./robot_driver; exec bash"
+
+sleep 4
+gnome-terminal -x bash -c "cd ~/iros_ws;./robot_nav;exec bash"

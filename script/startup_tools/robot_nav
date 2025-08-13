@@ -1,0 +1,14 @@
+#!/bin/bash
+source /opt/ros/melodic/setup.bash
+
+sleep 2
+gnome-terminal -x bash -c "cd ~/iros_ws/nav_env;source lslam_env;./x86/bin/lslam;exec bash"
+
+sleep 2
+gnome-terminal -x bash -c "source ~/.bashrc;cd ~/iros_ws/nav_code/irviz_ws;source install/setup.bash;rviz -d ~/iros_ws/nav_env/resource/iros.rviz;exec bash"
+
+sleep 2
+gnome-terminal -x bash -c "cd ~/iros_ws/nav_env/x86/bin;source ~/iros_ws/export_env;./comm_bridge;exec bash"
+
+sleep 2
+gnome-terminal -x bash -c "cd ~/iros_ws/nav_env/x86/bin;source ~/iros_ws/export_env;./iros;exec bash"

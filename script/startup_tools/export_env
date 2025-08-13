@@ -1,0 +1,20 @@
+#!/bin/bash
+source /opt/ros/melodic/setup.bash
+source ~/iros_ws/install/setup.bash
+
+export nav_bin="/home/admin1/iros_ws/nav_env/x86/bin"
+export ROBOT_ENV_PATH="/home/admin1/iros_ws/nav_env"
+export ROBOT_NAVI_CODE="/home/admin1/iros_ws/nav_code"
+export ROBOT_MAP_PATH="/home/admin1/iros_ws/resource/map"
+export HOST_SYSTEM_PROCESSOR="x86_64"
+export IROS_LOG=/home/admin1/iros_ws/iros_log
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/grpc/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/opencv-3.2.0/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/boost-1.76.0/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/ceres/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/zmqpp/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/BehaviorTree/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROBOT_ENV_PATH}/x86/third_libs/pcl/lib
+
